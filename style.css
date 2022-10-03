@@ -6,6 +6,11 @@
     text-decoration: none;
 }
 
+.container {
+    width: 1080px;
+    max-width: 1200px;
+}
+
 header {
     top: 0;
     position: sticky;
@@ -14,14 +19,12 @@ header {
     display: flex;
     justify-content: center;
 }
-.container {
-    width: 1080px;
-    max-width: 1200px;
+
+#heading .container {
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    /* border-bottom: 1px solid black; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px -10px;
 }
 
@@ -35,6 +38,7 @@ header {
 
 .container .info_header img {
     margin-right: 5rem;
+    cursor: pointer;
 }
 
 #navbar .list_items {
@@ -65,8 +69,56 @@ header {
 
 .container .cart i {
     margin-right: 2rem;
+    cursor: pointer;
 }
 
 .container .cart img {
     height: 40px;
+    cursor: pointer;
 }
+
+/* Hero section */
+
+#hero {
+    padding: 5.5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: flex-start;
+}
+
+#hero .container .left_box {
+    margin-right: 8rem;
+}
+
+#hero .container .left_box .big_image {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+#hero .container .left_box img {
+    width: 100%;
+}
+
+#hero .container .left_box .box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+#hero .container .left_box .box .small_boxes {
+    flex-basis: 22%;
+    cursor: pointer;
+}
+
+#hero .container .left_box .box .small_boxes img {
+    border-radius: 10px;
+}
+
