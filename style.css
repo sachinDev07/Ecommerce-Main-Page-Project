@@ -80,7 +80,7 @@ header {
 /* Hero section */
 
 #hero {
-    padding: 5.5rem 0rem;
+    padding: 4rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,12 +93,14 @@ header {
 }
 
 #hero .container .left_box {
-    margin-right: 8rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    width: 100%;
 }
 
 #hero .container .left_box .big_image {
     width: 100%;
-    height: 350px;
+    height: 400px;
     border-radius: 10px;
 }
 
@@ -122,3 +124,82 @@ header {
     border-radius: 10px;
 }
 
+ #hero .container .right_box {
+    width: 100%;
+    padding:  0 4rem 0 4rem;
+}
+
+#hero .container .right_box h5 {
+    color: hsl(26, 100%, 55%);
+    padding-top: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#hero .container .right_box h1 {
+    color: black;
+    margin-top: 1rem;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+} 
+
+ #hero .container .right_box .para{
+    margin-top: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+    line-height: 1.5;
+} 
+
+#hero .container .right_box .price h4 {
+    margin-top: 1rem;
+    font-size: 25px;
+    font-family: verdana;
+    
+}
+
+#hero .container .right_box .price p {
+    color: grey;
+    margin-top: .3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+#hero .container .right_box .symbol {
+    background-color:hsl(0, 0%, 100%);
+    border: 1px solid lightslategray;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#hero .container .right_box .symbol .minus {
+    width: 15%;
+    height: auto;
+    margin-right: 1rem;
+}
+
+#hero .container .right_box .symbol .plus {
+    width: 18%;
+    height: 24%;
+    margin-left: 1rem;
+}
+
+#hero .container .right_box .add_to_cart {
+    margin-left: 2rem;
+    background-color: yellow;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    white-space: nowrap;
+    cursor: pointer;
+}
