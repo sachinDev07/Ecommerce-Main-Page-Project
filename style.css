@@ -280,6 +280,10 @@ header {
         padding: 0 2rem;
     }
 
+    #hero .container .right_box .basket {
+        flex-direction: column;
+    }
+
     #hero .container .right_box h5 {
         padding-top: 0rem;
         text-transform: uppercase;
