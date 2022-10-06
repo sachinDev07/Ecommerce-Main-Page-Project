@@ -32,6 +32,10 @@ header {
     display: none;
 }
 
+.cross_mark {
+    display: none;
+}
+
 .container .info_header {
     display: flex;
     text-align: center;
@@ -229,6 +233,10 @@ header {
 
 @media (max-width:480px) {
 
+    .bar {
+        display: block;
+    }
+
     .container {
         padding: 0 1rem;
     }
@@ -238,9 +246,47 @@ header {
     }
 
     #navbar {
-        display: none;
+        position: relative;
     }
     
+    .cross_mark {
+        z-index: 1;
+        background-color: red;
+        display: none;
+    }
+
+
+    .cross_mark i {
+        margin-right: -2rem;
+    }
+    
+    #navbar .list_items {
+        transition: .3s ease;
+        width: 200px;
+        background-color: rgb(254, 254, 254);
+        flex-direction: column;
+        position: absolute;
+        align-items: flex-start;
+        left: -455px;
+        top: -43px;
+        padding: 6rem 3rem;
+        height: 100vh;
+        
+    }
+
+    #navbar .list_items li {
+        margin-bottom: 3rem;
+    }
+
+    #list.active {
+        left: -269px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    }
+
+    #close.closeActive {
+        display: block;
+    }
+
     .bar {
         margin-top: .4rem;
     }
